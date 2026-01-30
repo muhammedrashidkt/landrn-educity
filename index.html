@@ -134,7 +134,7 @@
                         <span class="uppercase tracking-widest">Global Islamic Excellence</span>
                     </div>
                     <h1 class="text-5xl lg:text-8xl font-black text-brand-950 leading-[1] mb-8 reveal delay-100">
-                        Nurturing <span class="text-brand-700">Souls</span>, <br> Inspiring <span class="italic font-serif">Minds.</span>
+                        Nurturing <span class="text-brand-700">Souls</span>, <br> Inspiring <span class="italic font-serif text-brand-700">Minds.</span>
                     </h1>
                     <p class="text-lg text-slate-500 mb-12 max-w-xl leading-relaxed reveal delay-200">
                         Welcome to Landern Educity. We harmonize world-class academic rigour with deep spiritual anchoring to create the leaders of tomorrow.
@@ -358,7 +358,8 @@
 
     <!-- Spiritual Anchor -->
     <section class="py-32 bg-brand-950 overflow-hidden relative">
-        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, #fff 1px, transparent 0); background-size: 40px 40px;"></div>
+        <!-- Subtle Pattern Overlay -->
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
         
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-24 items-center">
@@ -383,9 +384,26 @@
                 </div>
                 
                 <div class="reveal relative">
-                    <div class="absolute -top-10 -right-10 w-80 h-80 bg-brand-500/20 rounded-full blur-[100px]"></div>
-                    <div class="rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white/5 rotate-1">
-                        <img src="https://www.instagram.com/p/DJIkA2fTo4V/" alt="Masjid" class="w-full grayscale hover:grayscale-0 transition-all duration-1000">
+                    <!-- Architectural Glow -->
+                    <div class="absolute -top-10 -right-10 w-96 h-96 bg-brand-500/10 rounded-full blur-[120px]"></div>
+                    
+                    <!-- Cropped Modern Architecture Placement -->
+                    <div class="rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border-[12px] border-white/5 relative group bg-slate-800">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent z-10 opacity-60"></div>
+                        
+                        <!-- User Provided Architectural Masjid Image -->
+                        <img src="https://raw.githubusercontent.com/muhammedrashidkt/landrn-educity/07f40426ea5f88a178e9d8a4cd668b92de3c7559/masjid.png" 
+                             alt="Masjidul I'thikaaf Architecture" 
+                             class="w-full h-auto object-cover object-center transition-transform duration-[3000ms] group-hover:scale-105"
+                             onerror="this.src='https://images.unsplash.com/photo-1590075865003-e48277aec346?auto=format&fit=crop&q=80&w=1200&h=1600'">
+                        
+                        <!-- Detail Tag -->
+                        <div class="absolute bottom-10 left-10 z-20">
+                            <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-2xl border border-white/20">
+                                <div class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></div>
+                                <span class="text-[10px] text-white font-black tracking-widest uppercase">High Facilitated Architecture</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -397,7 +415,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="bg-[#fdfcfb] border border-slate-100 rounded-[4rem] p-10 lg:p-24 reveal shadow-sm relative overflow-hidden">
                 <!-- Background Decoration -->
-                <div class="absolute top-0 right-0 p-10 font-serif italic text-slate-100 text-9xl pointer-events-none">Landern</div>
+                <div class="absolute top-0 right-0 p-10 font-serif italic text-slate-100 text-9xl pointer-events-none text-slate-100 opacity-20">Connect</div>
 
                 <div class="relative z-10 grid lg:grid-cols-2 gap-20">
                     <div>
@@ -429,25 +447,18 @@
                     <div class="bg-white p-10 rounded-5xl shadow-[0_40px_80px_-15px_rgba(0,0,0,0.05)] border border-slate-50">
                         <form id="contactForm" class="space-y-8">
                             <div class="space-y-2">
-                                <label class="text-[11px] font-black uppercase tracking-widest text-slate-500 ml-2">Applicant Name</label>
-                                <input type="text" placeholder="Full legal name" class="w-full px-6 py-5 rounded-3xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 transition-all placeholder:text-slate-300" required>
+                                <label class="text-[11px] font-black uppercase tracking-widest text-slate-500 ml-2">Name</label>
+                                <input type="text" placeholder="Your full name" class="w-full px-6 py-5 rounded-3xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 transition-all placeholder:text-slate-300" required>
                             </div>
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div class="space-y-2">
-                                    <label class="text-[11px] font-black uppercase tracking-widest text-slate-500 ml-2">Email</label>
-                                    <input type="email" placeholder="email@address.com" class="w-full px-6 py-5 rounded-3xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 transition-all placeholder:text-slate-300" required>
-                                </div>
-                                <div class="space-y-2">
-                                    <label class="text-[11px] font-black uppercase tracking-widest text-slate-500 ml-2">Unit</label>
-                                    <select class="w-full px-6 py-5 rounded-3xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 transition-all">
-                                        <option>Albirr School</option>
-                                        <option>Girls School</option>
-                                        <option>Thilava PG</option>
-                                        <option>Compete Academy</option>
-                                    </select>
-                                </div>
+                            <div class="space-y-2">
+                                <label class="text-[11px] font-black uppercase tracking-widest text-slate-500 ml-2">Email</label>
+                                <input type="email" placeholder="email@address.com" class="w-full px-6 py-5 rounded-3xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 transition-all placeholder:text-slate-300" required>
                             </div>
-                            <button type="submit" class="w-full py-6 bg-brand-950 text-white font-black rounded-3xl hover:bg-brand-800 hover:shadow-2xl hover:shadow-brand-950/20 transition-all active:scale-[0.98]">Request Prospectus</button>
+                            <div class="space-y-2">
+                                <label class="text-[11px] font-black uppercase tracking-widest text-slate-500 ml-2">Message</label>
+                                <textarea rows="4" placeholder="How can we help you?" class="w-full px-6 py-5 rounded-3xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 transition-all placeholder:text-slate-300 resize-none" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-6 bg-brand-950 text-white font-black rounded-3xl hover:bg-brand-800 hover:shadow-2xl hover:shadow-brand-950/20 transition-all active:scale-[0.98]">Send Now</button>
                         </form>
                     </div>
                 </div>
@@ -507,7 +518,7 @@
         </div>
     </footer>
 
-    <!-- Mobile Navigation Overlay (Simplified) -->
+    <!-- Mobile Navigation Overlay -->
     <div id="mobile-overlay" class="fixed inset-0 bg-brand-950/95 z-[110] hidden flex flex-col items-center justify-center space-y-8 text-white">
         <button id="close-menu" class="absolute top-10 right-10 text-brand-400"><i data-lucide="x" class="w-10 h-10"></i></button>
         <a href="#home" class="text-3xl font-black mobile-link">Home</a>
@@ -560,13 +571,21 @@
         document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
             const btn = e.target.querySelector('button');
-            btn.innerText = 'Processing Application...';
+            const originalText = btn.innerText;
+            btn.innerText = 'Sending...';
             btn.disabled = true;
 
             setTimeout(() => {
-                btn.innerText = 'Application Submitted! ✓';
+                btn.innerText = 'Message Sent! ✓';
                 btn.classList.replace('bg-brand-950', 'bg-brand-600');
-            }, 2000);
+                e.target.reset();
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.replace('bg-brand-600', 'bg-brand-950');
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
         });
     </script>
 </body>
